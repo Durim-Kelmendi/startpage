@@ -1,5 +1,10 @@
 body {
-    background-color: #1f2229;
+    background-color: #35363a;
+}
+
+input[type="text"] {
+    font-size:18px;
+    font-family: 'Open Sans',sans-serif;
 }
 
 input {
@@ -7,15 +12,13 @@ input {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #373e4b;
+    background-color: #fff;
     width: 520px;
-    height: 60px;
+    height: 40px;
     border-radius: 50px;
-    font-size: 25px;
     outline: 0;
     border: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: beige;
+    color: #000;
     transition: 0.25s;
 }
 
@@ -26,46 +29,14 @@ img {
     transition: 0.3s;
 }
 
-button {
-    display: inline-block;
-    padding: 0;
-    margin-left: 48vw;
-    margin-top: 10vh;
-    border:none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#373e4b;
-    height: 70px;
-    width: 70px;
-    background-image: url("dogmode.png");
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    border-radius: 100%;
-    background-position: center; 
-    transition: 0.2s;
-  }
-
-button:hover {
-    transition: 0.3s;
-    background-color: #566f9e;
-}
-
-  a {
+a {
     display:block;
-  }
-
-#center:hover {
-    background-color: #566f9e;
-    transition: 0.35s;
-}
-#center {
-    transition: 0.25s;
+    text-decoration: none;
 }
 
-input:hover {
-    background-color: #454c59;
-    transition: 0.35s;
+.container {
+    width: 350px;
+    margin: 0 auto;
 }
 
 #imagediv {
@@ -78,65 +49,33 @@ input:hover {
     width: 250px;
     background-image: url("firefox.png");
     transition: 0.6s;
-}
-
-#imagediv.active {
-    background-image:none;
-    background-color: green;
-    transition: 1s;
-  }
-
-  #dogcontainer {
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-    background-repeat:no-repeat;
-    background-size:contain;
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
-    transition: 0.6s;
+    float:left;
 }
 
 #center {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin:auto;
-    background-color: #373e4b;
-    height: 100px;
-    width: 100px;
-    border-radius: 15px;
-    color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom :20px;
-    flex-grow: 0; 
-    flex-shrink: 0; 
-    margin-left: 20px;
-    margin-right: 20px;   
+    background-color: #202124;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 10px;
+    color: white;
+    transition: 0.25s;
+    float:left;
 }
-
-/* classes start here */
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   /* background-color: blueviolet; */
-    margin-top: 70px;
-    flex-wrap: nowrap;
-    /*width: 70vw;*/
-    margin-left: 37%;
-    margin-right: 37%;
-    flex: auto;    
+#center:hover {
+    background-color: #4e5158;
+    transition: 0.35s;
 }
 
 .searchcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: blueviolet;*/
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 20px;
 }
 
 .imagecontainer {
@@ -147,58 +86,47 @@ input:hover {
     margin-top: 3%;
 }
 
-/*Links start here and include my work/school stuff. 
-Replace with your own if neccessary
-Images are placed in the root directory
-
-#TODO 
-
-Make logo for Optima*/
-
-.youtube {
-    background-image: url("youtube.png");
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center;  
-}
-
-.github {
-    background-image: url("github.png");
-    background-size: 45px;
-    background-repeat: no-repeat;
-    background-position: center;  
-}
-
-.calendar {
-    background-image: url("calendar.png");
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center;  
-}
-
-.springboard { 
-    background-image: url("springboard.PNG"); 
-    background-size: 50px;
+.imgur {
+    background-image: url("imgur.png");
+    background-size: 5px;
     background-repeat: no-repeat;
     background-position: center;
+    float:left;
 }
 
-.amk {
-    background-image: url("amk.PNG");
-    background-size: 50px;
+.plex {
+    background-image: url("plex.png");
+    background-size: 13px;
     background-repeat: no-repeat;
     background-position: center;
+    float:left;
 }
 
-.optima {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-kerning: auto;  
+.netflix {
+    background-image: url("netflix.png");
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
 }
 
+.liu {
+    background-image: url("liu.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+}
 
- 
-  
- 
-
-
+::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+ }
